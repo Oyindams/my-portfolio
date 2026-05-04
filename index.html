@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="icon" type="image/jpeg" href="logo.jpg" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +8,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+ <!-- LOADING SCREEN -->
+<div id="loader">
+  <img src="logo.jpg" alt="Oyindamola Babatunde Logo" class="loader-logo" />
+  <p class="loader-name">Oyindamola Babatunde</p>
+</div>
     <!-- NAV -->
 <nav>
-  <div class="nav-logo">YourName</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -20,7 +25,10 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Oyindamola.</div>
+  <div class="nav-logo">
+  <img src="logo.jpg" alt="Logo" class="nav-logo-img" />
+  
+</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -113,6 +121,89 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="experience-container">
+    <p class="section-label">Where I've Worked</p>
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+
+      <!-- Job 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Frontend Developer</h3>
+              <p class="job-company">Artytech Incorporation <span class="job-location">· Tokyo, Japan</span></p>
+            </div>
+            <span class="job-date">Oct 2025 — Dec 2025</span>
+          </div>
+            <a href="https://artytech.jp" target="_blank" class="company-url">🌐 artytech.jp ↗</a>
+          <ul class="job-responsibilities">
+            <li>Built a fully responsive Japanese-style landing page with animations, CSS styling, and responsive mobile support.</li>
+            <li>Developed a fully functional Vue.js website with routing, reusable components, and responsive UI.</li>
+            <li>Assisted in an AI-based system by curating and structuring keywords, metadata, and textual resources for model training and recommendation workflows.</li>
+            <li>Connected frontend components to a cloud-hosted backend (AWS Amplify) for real-time data handling.</li>
+          </ul>
+          <div class="job-tags">
+            <span>Vue.js</span><span>React</span><span>AWS Amplify</span><span>CSS</span><span>AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Undergraduate Intern — Network Engineer</h3>
+              <p class="job-company">Huawei Technologies Nigeria <span class="job-location">· Lekki, Lagos</span></p>
+            </div>
+            <span class="job-date">Mar 2025 — Aug 2025</span>
+          </div>
+            <a href="https://huawei.com/en/" target="_blank" class="company-url">🌐 huawei.com ↗</a>
+          <ul class="job-responsibilities">
+            <li>Collaborated with RF engineers to support nationwide spectrum optimization and network quality improvement for over 30 states in Nigeria.</li>
+            <li>Configured and optimized 30+ new and existing cellular sites under the Configuration team, improving network readiness and reliability.</li>
+            <li>Coordinated MTN RF optimization, assigning tasks to multiple drive test engineers, validating results, and producing post-drive test reports for executive decision-making.</li>
+            <li>Planned and implemented 50+ neighbor relations to ensure seamless handovers, reducing dropped call rates.</li>
+          </ul>
+          <div class="job-tags">
+            <span>RF Systems</span><span>4G/3G/2G</span><span>QGIS</span><span>Network Planning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Network Operation Centre Intern</h3>
+              <p class="job-company">Teltwine Networks Limited <span class="job-location">· Ajah, Lagos</span></p>
+            </div>
+            <span class="job-date">Jul 2024 — Oct 2024</span>
+          </div>
+           <a href="https://teltwine.com" target="_blank" class="company-url">🌐 teltwine.com ↗</a>
+          <ul class="job-responsibilities">
+            <li>Worked in a team environment to manage and monitor 100+ client networks, assisting in configuration of clients' network systems for seamless internet service.</li>
+            <li>Monitored client networks in real time, identifying and troubleshooting issues related to outages, latency, and disruptions — contributing to 90% uptime across services.</li>
+            <li>Coordinated with internal teams to resolve network outages swiftly, ensuring minimal downtime and high client satisfaction.</li>
+          </ul>
+          <div class="job-tags">
+            <span>NOC</span><span>Network Monitoring</span><span>Troubleshooting</span><span>Client Management</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 

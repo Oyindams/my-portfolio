@@ -1,3 +1,11 @@
+// Loading screen
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 1800);
+});
+
 // Send message via mailto
 function sendMessage() {
   const name = document.getElementById('name').value.trim();

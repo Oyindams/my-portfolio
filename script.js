@@ -1,10 +1,41 @@
 // Loading screen
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
-  setTimeout(() => {
-    loader.classList.add('hidden');
-  }, 1800);
+  if (loader) {
+    setTimeout(() => {
+      loader.classList.add('hidden');
+    }, 1800);
+  }
 });
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-links');
+const navOverlay = document.getElementById('nav-overlay');
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+    navOverlay.classList.toggle('open');
+  });
+}
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+    navOverlay.classList.remove('open');
+  });
+});
+
+if (navOverlay) {
+  navOverlay.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+    navOverlay.classList.remove('open');
+  });
+}
 
 // Send message via mailto
 function sendMessage() {
@@ -17,13 +48,13 @@ function sendMessage() {
     return;
   }
 
-  const mailto = `mailto:babatundeoyindamola6@gmail.com?subject=Portfolio Message from ${name}&body=${message}%0A%0AFrom: ${name} (${email})`;
+  const mailto = `mailto:babatundeoyindamolaferanmi@gmail.com?subject=Portfolio Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom: ${name} (${email})`;
   window.location.href = mailto;
 }
 
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-links a');
+const allNavLinks = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
   let current = '';
@@ -34,7 +65,7 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  navLinks.forEach(link => {
+  allNavLinks.forEach(link => {
     link.classList.remove('active');
     if (link.getAttribute('href') === `#${current}`) {
       link.classList.add('active');
@@ -52,9 +83,11 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.project-card, .highlight-card, .contact-item').forEach(el => {
+document.querySelectorAll(
+  '.project-card, .highlight-card, .contact-item, .timeline-item, .cert-card, .skill-group, .section-label, .section-title'
+).forEach((el, i) => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  el.style.transition = `opacity 0.6s ease ${(i % 6) * 0.05}s, transform 0.6s ease ${(i % 6) * 0.05}s`;
   observer.observe(el);
 });

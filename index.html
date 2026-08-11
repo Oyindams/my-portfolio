@@ -4,496 +4,618 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oyindamola Babatunde | Data Scientist & AI Engineer</title>
-    <link rel="icon" type="image/png" sizes="180x180" href="icon.png" />
+    <meta name="description" content="Oyindamola Babatunde — Data Scientist & AI Engineer building intelligent systems across healthcare, agriculture, finance, and emerging markets." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#0f0f0f" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span class="status-prompt">➜ ~/oyindamola-portfolio</span>
+      <span class="status-sep">·</span>
+      <span class="status-text">7 projects shipped · 6+ certifications · open to work</span>
+    </div>
+
     <!-- NAV -->
-<nav>
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <nav>
+      <a href="#hero" class="nav-logo">Oyindamola<span>.</span></a>
 
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#about" class="nav-link">About</a></li>
-    <li><a href="#experience" class="nav-link">Experience</a></li>
-    <li><a href="#projects" class="nav-link">Projects</a></li>
-    <li><a href="#certifications" class="nav-link">Certifications</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-  </ul>
-</nav>
-<div class="nav-overlay" id="nav-overlay"></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-content">
-    <p class="hero-greeting">Hi, My Name Is</p>
-    <h1 class="hero-name">Oyindamola Babatunde</h1>
-    <h2 class="hero-role">Data Scientist <span>&</span> AI Engineer</h2>
-    <p class="hero-tagline">
-      I build intelligent systems across various sectors.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn btn-primary">View My Work</a>
-      <a href="https://drive.google.com/file/d/14hkFNP19h1YbSSJGZVwDiFptXrn0Cag4/view?usp=sharing" target="_blank" class="btn btn-outline">View Resume ↗</a>
-    </div>
-  </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
 
-  <div class="hero-socials">
-  <a href="https://github.com/Oyindams" target="_blank" title="GitHub">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-  </a>
-  <a href="https://linkedin.com/in/oyindamola-babatunde-/" target="_blank" title="LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-  </a>
-  <a href="https://www.instagram.com/oyindamolababz/" target="_blank" title="Instagram">
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-</a>
-  <a href="mailto:babatundeoyindamolaferanmi@gmail.com" title="Email">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.91l9.615-7.09h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
-  </a>
-</div>
-</section>
+      <a href="https://drive.google.com/file/d/14hkFNP19h1YbSSJGZVwDiFptXrn0Cag4/view?usp=sharing" target="_blank" class="nav-resume">Resume</a>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-container">
-
-    <div class="about-text">
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">Who I Am</h2>
-      <p class="about-bio">
-        I'm a final year Computer Science student at <span>McPherson University</span>, 
-        focused on Artificial Intelligence, Machine Learning, and Data Science. 
-        I build intelligent systems that solve real-world problems across healthcare, 
-        agriculture, finance, and emerging markets.
-      </p>
-      <p class="about-bio">
-        I have industry experience in networking engineering and software development 
-        (Frontend Developer at a Japanese tech company). Currently building AI/ML projects 
-        including an automated loan creditworthiness system.
-      </p>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="skill-tags">
-            <span>Python</span><span>C</span><span>SQL</span>
-            <span>HTML/CSS</span><span>JavaScript</span>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-left">
+        <div class="hero-content">
+          <p class="hero-pill">Data Scientist · AI Engineer · ML Researcher</p>
+          <h1 class="hero-name">Oyindamola Babatunde</h1>
+          <p class="hero-tagline">
+            I build intelligent systems across healthcare, agriculture, finance, and emerging markets — from satellite-based landslide detection to explainable credit-risk models.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://drive.google.com/file/d/14hkFNP19h1YbSSJGZVwDiFptXrn0Cag4/view?usp=sharing" target="_blank" class="btn btn-primary">Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
           </div>
-        </div>
-        <div class="skill-group">
-          <h4>ML & Data</h4>
-          <div class="skill-tags">
-            <span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span>
-            <span>SciPy</span><span>Kaggle</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Web</h4>
-          <div class="skill-tags">
-            <span>React</span><span>Vue.js</span><span>AWS Amplify</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Tools</h4>
-          <div class="skill-tags">
-            <span>VS Code</span><span>Jupyter</span><span>Google Colab</span>
-            <span>QGIS</span><span>GitHub</span>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Oyindams" target="_blank" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/oyindamola-babatunde-/" target="_blank" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/oyindamolababz/" target="_blank" title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="mailto:babatundeoyindamolaferanmi@gmail.com" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.91l9.615-7.09h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="about-highlights">
-  <div class="highlight-card">
-    <span class="highlight-num">TEDx</span>
-    <span class="highlight-label">Speaker</span>
-  </div>
-  <div class="highlight-card">
-    <span class="highlight-num">1st</span>
-    <span class="highlight-label">DSN Hackathon Winner</span>
-  </div>
-  <div class="highlight-card">
-    <span class="highlight-num">5+</span>
-    <span class="highlight-label">ML Projects</span>
-  </div>
-  <div class="highlight-card">
-    <span class="highlight-num">6+</span>
-    <span class="highlight-label">Certifications</span>
-  </div>
-</div>
+      <!-- Decorative code panel -->
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">model_pipeline.py</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="tok-kw">import</span> pandas <span class="tok-kw">as</span> pd</p>
+          <p><span class="tok-kw">from</span> sklearn.ensemble <span class="tok-kw">import</span> RandomForestClassifier</p>
+          <p>&nbsp;</p>
+          <p>df = pd.read_csv(<span class="tok-str">"loan_data.csv"</span>)</p>
+          <p>model = RandomForestClassifier()</p>
+          <p>model.fit(X_train, y_train)</p>
+          <p>&nbsp;</p>
+          <p><span class="tok-kw">print</span>(<span class="tok-str">f"Accuracy: {score:.2%}"</span>)</p>
+          <p class="tok-out">&gt;&gt;&gt; Accuracy: 83.00%<span class="term-cursor">▍</span></p>
+        </div>
+      </div>
 
-  </div>
-</section>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+        <span>Scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="experience-container">
-    <p class="section-label">Where I've Worked</p>
-    <h2 class="section-title">Experience</h2>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-container">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Who I Am</h2>
 
-    <div class="timeline">
+        <div class="about-grid">
 
-      <!-- Job 1 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Frontend Developer</h3>
-              <p class="job-company">Artytech Incorporation <span class="job-location">· Tokyo, Japan</span></p>
+          <div class="about-panel">
+            <div class="avatar-ring">
+              <span>OB</span>
             </div>
-            <span class="job-date">Oct 2025 — Dec 2025</span>
-          </div>
-            <a href="https://artytech.jp" target="_blank" class="company-url">🌐 artytech.jp ↗</a>
-          <ul class="job-responsibilities">
-            <li>Built a fully responsive Japanese-style landing page with animations, CSS styling, and responsive mobile support.</li>
-            <li>Developed a fully functional Vue.js website with routing, reusable components, and responsive UI.</li>
-            <li>Assisted in an AI-based system by curating and structuring keywords, metadata, and textual resources for model training and recommendation workflows.</li>
-            <li>Connected frontend components to a cloud-hosted backend (AWS Amplify) for real-time data handling.</li>
-          </ul>
-          <div class="job-tags">
-            <span>Vue.js</span><span>React</span><span>AWS Amplify</span><span>CSS</span><span>AI</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Job 2 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Undergraduate Intern — Network Engineer</h3>
-              <p class="job-company">Huawei Technologies Nigeria <span class="job-location">· Lekki, Lagos</span></p>
+            <div class="about-badges">
+              <div class="about-badge"><span class="badge-num">TEDx</span><span class="badge-label">Speaker</span></div>
+              <div class="about-badge"><span class="badge-num">1st</span><span class="badge-label">DSN Hackathon</span></div>
+              <div class="about-badge"><span class="badge-num">5+</span><span class="badge-label">ML Projects</span></div>
+              <div class="about-badge"><span class="badge-num">6+</span><span class="badge-label">Certifications</span></div>
             </div>
-            <span class="job-date">Mar 2025 — Aug 2025</span>
           </div>
-            <a href="https://huawei.com/en/" target="_blank" class="company-url">🌐 huawei.com ↗</a>
-          <ul class="job-responsibilities">
-            <li>Collaborated with RF engineers to support nationwide spectrum optimization and network quality improvement for over 30 states in Nigeria.</li>
-            <li>Configured and optimized 30+ new and existing cellular sites under the Configuration team, improving network readiness and reliability.</li>
-            <li>Coordinated MTN RF optimization, assigning tasks to multiple drive test engineers, validating results, and producing post-drive test reports for executive decision-making.</li>
-            <li>Planned and implemented 50+ neighbor relations to ensure seamless handovers, reducing dropped call rates.</li>
-          </ul>
-          <div class="job-tags">
-            <span>RF Systems</span><span>4G/3G/2G</span><span>QGIS</span><span>Network Planning</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Job 3 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Network Operation Centre Intern</h3>
-              <p class="job-company">Teltwine Networks Limited <span class="job-location">· Ajah, Lagos</span></p>
+          <div class="about-text">
+            <p class="about-bio">
+              I'm a final year Computer Science student at <span>McPherson University</span>,
+              focused on Artificial Intelligence, Machine Learning, and Data Science.
+              I build intelligent systems that solve real-world problems across healthcare,
+              agriculture, finance, and emerging markets.
+            </p>
+            <p class="about-bio">
+              I have industry experience in networking engineering and software development
+              (Frontend Developer at a Japanese tech company). Currently building AI/ML projects
+              including an automated loan creditworthiness system.
+            </p>
+
+            <div class="about-cards">
+              <div class="focus-card">
+                <h4>Machine Learning &amp; AI</h4>
+                <p>Designing and training ML/deep learning models — from ensemble classifiers to transformer-based NLP — with explainability (SHAP) built in.</p>
+              </div>
+              <div class="focus-card">
+                <h4>Data &amp; Geospatial Systems</h4>
+                <p>Fusing satellite imagery, sensor, and tabular data into pipelines that hold up outside the notebook, using Python, SQL, and QGIS.</p>
+              </div>
+              <div class="focus-card">
+                <h4>Speaking &amp; Community</h4>
+                <p>TEDx speaker and hackathon winner, passionate about making AI/ML approachable for students entering the field.</p>
+              </div>
             </div>
-            <span class="job-date">Jul 2024 — Oct 2024</span>
           </div>
-           <a href="https://teltwine.com" target="_blank" class="company-url">🌐 teltwine.com ↗</a>
-          <ul class="job-responsibilities">
-            <li>Worked in a team environment to manage and monitor 100+ client networks, assisting in configuration of clients' network systems for seamless internet service.</li>
-            <li>Monitored client networks in real time, identifying and troubleshooting issues related to outages, latency, and disruptions — contributing to 90% uptime across services.</li>
-            <li>Coordinated with internal teams to resolve network outages swiftly, ensuring minimal downtime and high client satisfaction.</li>
-          </ul>
-          <div class="job-tags">
-            <span>NOC</span><span>Network Monitoring</span><span>Troubleshooting</span><span>Client Management</span>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="experience-container">
+        <p class="section-label">Where I've Worked</p>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <div class="job-header-left">
+                  <div class="company-logo">A</div>
+                  <div>
+                    <h3 class="job-title">Frontend Developer</h3>
+                    <p class="job-company">Artytech Incorporation <span class="job-location">· Tokyo, Japan</span></p>
+                  </div>
+                </div>
+                <span class="job-date">Oct 2025 — Dec 2025</span>
+              </div>
+              <a href="https://artytech.jp" target="_blank" class="company-url">🌐 artytech.jp ↗</a>
+              <ul class="job-responsibilities">
+                <li>Built a fully responsive Japanese-style landing page with animations, CSS styling, and responsive mobile support.</li>
+                <li>Developed a fully functional Vue.js website with routing, reusable components, and responsive UI.</li>
+                <li>Assisted in an AI-based system by curating and structuring keywords, metadata, and textual resources for model training and recommendation workflows.</li>
+                <li>Connected frontend components to a cloud-hosted backend (AWS Amplify) for real-time data handling.</li>
+              </ul>
+              <div class="job-tags">
+                <span>Vue.js</span><span>React</span><span>AWS Amplify</span><span>CSS</span><span>AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <div class="job-header-left">
+                  <div class="company-logo">H</div>
+                  <div>
+                    <h3 class="job-title">Undergraduate Intern — Network Engineer</h3>
+                    <p class="job-company">Huawei Technologies Nigeria <span class="job-location">· Lekki, Lagos</span></p>
+                  </div>
+                </div>
+                <span class="job-date">Mar 2025 — Aug 2025</span>
+              </div>
+              <a href="https://huawei.com/en/" target="_blank" class="company-url">🌐 huawei.com ↗</a>
+              <ul class="job-responsibilities">
+                <li>Collaborated with RF engineers to support nationwide spectrum optimization and network quality improvement for over 30 states in Nigeria.</li>
+                <li>Configured and optimized 30+ new and existing cellular sites under the Configuration team, improving network readiness and reliability.</li>
+                <li>Coordinated MTN RF optimization, assigning tasks to multiple drive test engineers, validating results, and producing post-drive test reports for executive decision-making.</li>
+                <li>Planned and implemented 50+ neighbor relations to ensure seamless handovers, reducing dropped call rates.</li>
+              </ul>
+              <div class="job-tags">
+                <span>RF Systems</span><span>4G/3G/2G</span><span>QGIS</span><span>Network Planning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <div class="job-header-left">
+                  <div class="company-logo">T</div>
+                  <div>
+                    <h3 class="job-title">Network Operation Centre Intern</h3>
+                    <p class="job-company">Teltwine Networks Limited <span class="job-location">· Ajah, Lagos</span></p>
+                  </div>
+                </div>
+                <span class="job-date">Jul 2024 — Oct 2024</span>
+              </div>
+              <a href="https://teltwine.com" target="_blank" class="company-url">🌐 teltwine.com ↗</a>
+              <ul class="job-responsibilities">
+                <li>Worked in a team environment to manage and monitor 100+ client networks, assisting in configuration of clients' network systems for seamless internet service.</li>
+                <li>Monitored client networks in real time, identifying and troubleshooting issues related to outages, latency, and disruptions — contributing to 90% uptime across services.</li>
+                <li>Coordinated with internal teams to resolve network outages swiftly, ensuring minimal downtime and high client satisfaction.</li>
+              </ul>
+              <div class="job-tags">
+                <span>NOC</span><span>Network Monitoring</span><span>Troubleshooting</span><span>Client Management</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="projects-container">
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="projects-subtitle">
+          A selection of machine learning and AI projects I've built.
+        </p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <span class="project-badge ongoing">Ongoing</span>
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Landslide Detection &amp; Classification</h3>
+            <p>Thesis project — developing an AI system that fuses SAR radar and optical satellite imagery (Sentinel-1 &amp; 2) to detect and classify landslides. Uses ML and deep learning models with XAI (SHAP) for explainability, targeting F1 &gt; 0.75.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Deep Learning</span><span>SAR Imagery</span><span>SHAP</span><span>Sentinel</span>
+            </div>
+            <span class="project-date">2026 — Thesis</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Loan Creditworthiness Prediction</h3>
+            <p>An end-to-end ML pipeline that assesses loan creditworthiness with <strong>83% accuracy</strong>, using ensemble methods, hyperparameter tuning, and SHAP values for model transparency.</p>
+            <div class="project-tags">
+              <span>Python</span><span>scikit-learn</span><span>SHAP</span><span>ML Pipeline</span>
+            </div>
+            <span class="project-date">Nov 2025</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>RAG Model for Nigerian Tax Law</h3>
+            <p>A Retrieval Augmented Generation pipeline using LangChain, FAISS, and Sentence Transformers. Integrated Mistral-7B to generate accurate responses grounded in tax documents.</p>
+            <div class="project-tags">
+              <span>LangChain</span><span>FAISS</span><span>Mistral-7B</span><span>RAG</span>
+            </div>
+            <span class="project-date">Oct 2025</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Heart Disease Prediction Model</h3>
+            <p>Evaluated ensemble classifiers (Random Forest, LightGBM, CatBoost) on 7,300 patients. Applied feature selection and fine-tuned hyperparameters achieving high accuracy on imbalanced data.</p>
+            <div class="project-tags">
+              <span>LightGBM</span><span>CatBoost</span><span>Random Forest</span><span>Python</span>
+            </div>
+            <span class="project-date">Sep 2024</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>English–Yoruba Translation Model</h3>
+            <p>Built an mT5-based English–Yoruba machine translation model using SimpleTransformer architecture. Evaluated with sacreBLEU across validation and test sets.</p>
+            <div class="project-tags">
+              <span>mT5</span><span>NLP</span><span>Neural Networks</span><span>Python</span>
+            </div>
+            <span class="project-date">Oct 2024</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Financial AI Chatbot — BCG GenAI</h3>
+            <p>Built an AI-powered financial chatbot as part of BCG's GenAI Consulting job simulation. Integrated complex financial data from 10-K and 10-Q reports using rule-based logic to deliver user-friendly financial insights.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>GenAI</span><span>NLP</span><span>BCG</span>
+            </div>
+            <span class="project-date">2024</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <div class="project-header">
+              <div class="project-links">
+                <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h3>Traffic Prediction Model</h3>
+            <p>Built an ML model to predict traffic patterns using historical data and engineering-based features. Compared Linear Regression, Random Forest, and KNN for predictive performance.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Random Forest</span><span>KNN</span><span>Feature Engineering</span>
+            </div>
+            <span class="project-date">Jun 2024</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section id="toolkit">
+      <div class="toolkit-container">
+        <p class="section-label">Stack</p>
+        <h2 class="section-title">Technologies I Build With</h2>
+        <p class="projects-subtitle">Languages, ML frameworks, and tools I use to take ideas from notebook to production.</p>
+
+        <div class="toolkit-grid">
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy" /><span>Python</span></div>
+          <div class="tool-chip"><span class="tool-fallback">C</span><span>C</span></div>
+          <div class="tool-chip"><span class="tool-fallback">SQL</span><span>SQL</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" loading="lazy" /><span>HTML5</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" loading="lazy" /><span>CSS3</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" /><span>JavaScript</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy" /><span>TensorFlow</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy" /><span>PyTorch</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" loading="lazy" /><span>scikit-learn</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/scipy/8CAAE6" alt="SciPy" loading="lazy" /><span>SciPy</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" alt="Kaggle" loading="lazy" /><span>Kaggle</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" loading="lazy" /><span>React</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" /><span>Vue.js</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS Amplify" loading="lazy" /><span>AWS Amplify</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code" loading="lazy" /><span>VS Code</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" loading="lazy" /><span>Jupyter</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" loading="lazy" /><span>Google Colab</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/qgis/589632" alt="QGIS" loading="lazy" /><span>QGIS</span></div>
+          <div class="tool-chip"><img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" loading="lazy" /><span>GitHub</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="cert-container">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications &amp; Programs</h2>
+        <p class="projects-subtitle">Programs, bootcamps and certifications I've completed.</p>
+
+        <div class="cert-grid">
+
+          <div class="cert-card">
+            <div class="cert-badge">MS</div>
+            <div class="cert-info">
+              <h4>Microsoft Azure AI Training</h4>
+              <p>Elevate</p>
+              <span>2026</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">ME</div>
+            <div class="cert-info">
+              <h4>METI Japan Internship Completion</h4>
+              <p>METI</p>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">IX</div>
+            <div class="cert-info">
+              <h4>IndabaX Nigeria - Summer School &amp; Research Workshop</h4>
+              <p>IndabaX</p>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">DSN</div>
+            <div class="cert-info">
+              <h4>DSN AI Bootcamp (x2 Certification)</h4>
+              <p>Data Science Nigeria</p>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">BCG</div>
+            <div class="cert-info">
+              <h4>GEN AI BCG Certification</h4>
+              <p>BCG Forage</p>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">ALX</div>
+            <div class="cert-info">
+              <h4>ALX AICE AI Career Essentials</h4>
+              <p>ALX Africa</p>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">G</div>
+            <div class="cert-info">
+              <h4>Google Developers Certificate</h4>
+              <p>Google</p>
+              <span>2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge">MS</div>
+            <div class="cert-info">
+              <h4>Microsoft Certificate</h4>
+              <p>Microsoft</p>
+              <span>2024</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section id="recognition">
+      <div class="recognition-container">
+        <div class="recognition-grid">
+          <div class="recognition-item">
+            <span class="recognition-num">TEDx</span>
+            <span class="recognition-label">Invited Speaker</span>
+          </div>
+          <div class="recognition-item">
+            <span class="recognition-num">1st Place</span>
+            <span class="recognition-label">DSN Hackathon Winner</span>
+          </div>
+          <div class="recognition-item">
+            <span class="recognition-num">7+</span>
+            <span class="recognition-label">AI/ML Projects Shipped</span>
+          </div>
+          <div class="recognition-item">
+            <span class="recognition-num">6+</span>
+            <span class="recognition-label">Certifications Earned</span>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- QUOTE -->
+    <section id="quote">
+      <div class="quote-container">
+        <p class="section-label">How I Think</p>
+        <blockquote>"All models are wrong, but some are useful."</blockquote>
+        <cite>George Box, Statistician</cite>
+      </div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="projects-container">
-    <p class="section-label">My Work</p>
-    <h2 class="section-title">Projects</h2>
-    <p class="projects-subtitle">
-      A selection of machine learning and AI projects I've built.
-    </p>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-container">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-subtitle">
+          Got a project to discuss? A role that fits? Or just want to connect?
+          My inbox is always open.
+        </p>
 
-    <div class="projects-grid">
+        <div class="contact-wrapper">
 
-     <!-- Project 1 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <span class="project-badge ongoing">Ongoing</span>
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+          <div class="contact-info">
+
+            <a href="mailto:babatundeoyindamolaferanmi@gmail.com" class="contact-card">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.91l9.615-7.09h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">babatundeoyindamolaferanmi@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/oyindamola-babatunde-/" target="_blank" class="contact-card">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-value">oyindamola-babatunde</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/Oyindams" target="_blank" class="contact-card">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">github.com/Oyindams</p>
+              </div>
+            </a>
+
+            <div class="contact-card contact-card-static">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Lagos State, Nigeria</p>
+              </div>
+            </div>
+
+            <a href="https://drive.google.com/file/d/14hkFNP19h1YbSSJGZVwDiFptXrn0Cag4/view?usp=sharing" target="_blank" class="contact-card contact-card-resume">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 15.5l-5-5 1.41-1.41L11 12.67V4h2v8.67l2.59-2.58L17 11.5l-5 5zM5 18h14v2H5z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">Resume</p>
+                <p class="contact-value">Download PDF</p>
+              </div>
+            </a>
+
           </div>
-        </div>
-        <h3>Landslide Detection & Classification</h3>
-        <p>Thesis project — developing an AI system that fuses SAR radar and optical satellite imagery (Sentinel-1 & 2) to detect and classify landslides. Uses ML and deep learning models with XAI (SHAP) for explainability, targeting F1 &gt; 0.75.</p>
-        <div class="project-tags">
-          <span>Python</span><span>Deep Learning</span><span>SAR Imagery</span><span>SHAP</span><span>Sentinel</span>
-        </div>
-        <span class="project-date">2026 — Thesis</span>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
+          <div class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Hi Oyindamola, I'd love to discuss..."></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
           </div>
-        </div>
-        <h3>Loan Creditworthiness Prediction</h3>
-        <p>An end-to-end ML pipeline that assesses loan creditworthiness with <strong>83% accuracy</strong>, using ensemble methods, hyperparameter tuning, and SHAP values for model transparency.</p>
-        <div class="project-tags">
-          <span>Python</span><span>scikit-learn</span><span>SHAP</span><span>ML Pipeline</span>
-        </div>
-        <span class="project-date">Nov 2025</span>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
-        <h3>RAG Model for Nigerian Tax Law</h3>
-        <p>A Retrieval Augmented Generation pipeline using LangChain, FAISS, and Sentence Transformers. Integrated Mistral-7B to generate accurate responses grounded in tax documents.</p>
-        <div class="project-tags">
-          <span>LangChain</span><span>FAISS</span><span>Mistral-7B</span><span>RAG</span>
-        </div>
-        <span class="project-date">Oct 2025</span>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
-        <h3>Heart Disease Prediction Model</h3>
-        <p>Evaluated ensemble classifiers (Random Forest, LightGBM, CatBoost) on 7,300 patients. Applied feature selection and fine-tuned hyperparameters achieving high accuracy on imbalanced data.</p>
-        <div class="project-tags">
-          <span>LightGBM</span><span>CatBoost</span><span>Random Forest</span><span>Python</span>
-        </div>
-        <span class="project-date">Sep 2024</span>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
-        <h3>English–Yoruba Translation Model</h3>
-        <p>Built an mT5-based English–Yoruba machine translation model using SimpleTransformer architecture. Evaluated with sacreBLEU across validation and test sets.</p>
-        <div class="project-tags">
-          <span>mT5</span><span>NLP</span><span>Neural Networks</span><span>Python</span>
-        </div>
-        <span class="project-date">Oct 2024</span>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
-        <h3>Financial AI Chatbot — BCG GenAI</h3>
-        <p>Built an AI-powered financial chatbot as part of BCG's GenAI Consulting job simulation. Integrated complex financial data from 10-K and 10-Q reports using rule-based logic to deliver user-friendly financial insights.</p>
-        <div class="project-tags">
-          <span>Python</span><span>Pandas</span><span>GenAI</span><span>NLP</span><span>BCG</span>
-        </div>
-        <span class="project-date">2024</span>
-      </div>
-
-      <!-- Project 7 -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-links">
-            <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
-        <h3>Traffic Prediction Model</h3>
-        <p>Built an ML model to predict traffic patterns using historical data and engineering-based features. Compared Linear Regression, Random Forest, and KNN for predictive performance.</p>
-        <div class="project-tags">
-          <span>Python</span><span>Random Forest</span><span>KNN</span><span>Feature Engineering</span>
-        </div>
-        <span class="project-date">Jun 2024</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="cert-container">
-    <p class="section-label">Credentials</p>
-    <h2 class="section-title">Certifications & Programs</h2>
-    <p class="projects-subtitle">Programs, bootcamps and certifications I've completed.</p>
-
-    <div class="cert-grid">
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>Microsoft Azure AI Training</h4>
-          <p>Elevate</p>
-          <span>2026</span>
         </div>
       </div>
+    </section>
 
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>METI Japan Internship Completion</h4>
-          <p>METI</p>
-          <span>2025</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>IndabaX Nigeria - Summer School & Research Workshop</h4>
-          <p>IndabaX</p>
-          <span>2025</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>DSN AI Bootcamp (x2 Certification)</h4>
-          <p>Data Science Nigeria</p>
-          <span>2024</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>GEN AI BCG Certification</h4>
-          <p>BCG Forage</p>
-          <span>2024</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>ALX AICE AI Career Essentials</h4>
-          <p>ALX Africa</p>
-          <span>2024</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>Google Developers Certificate</h4>
-          <p>Google</p>
-          <span>2024</span>
-        </div>
-      </div>
-
-      <div class="cert-card">
-        <div class="cert-info">
-          <h4>Microsoft Certificate</h4>
-          <p>Microsoft</p>
-          <span>2024</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-container">
-    <p class="section-label">Get In Touch</p>
-    <h2 class="section-title">Let's Work Together</h2>
-    <p class="contact-subtitle">
-      Got a project to discuss? A role that fits? Or just want to connect? 
-      My inbox is always open.
-    </p>
-
-    <div class="contact-wrapper">
-
-      
-      <!-- Contact Info -->
-<div class="contact-info">
-
-  <div class="contact-item">
-    <span class="contact-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.91l9.615-7.09h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
-    </span>
-    <div>
-      <p class="contact-label">Email</p>
-      <a href="mailto:babatundeoyindamolaferanmi@gmail.com">babatundeoyindamolaferanmi@gmail.com</a>
-    </div>
-  </div>
-
-  <div class="contact-item">
-    <span class="contact-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-    </span>
-    <div>
-      <p class="contact-label">LinkedIn</p>
-      <a href="https://linkedin.com/in/oyindamola-babatunde-/" target="_blank">oyindamola-babatunde</a>
-    </div>
-  </div>
-
-  <div class="contact-item">
-    <span class="contact-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-    </span>
-    <div>
-      <p class="contact-label">GitHub</p>
-      <a href="https://github.com/Oyindams" target="_blank">github.com/Oyindams</a>
-    </div>
-  </div>
-
-  <div class="contact-item">
-    <span class="contact-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-    </span>
-    <div>
-      <p class="contact-label">Location</p>
-      <p class="contact-value">Lagos State, Nigeria</p>
-    </div>
-  </div>
-
-</div>
-
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" placeholder="John Doe" />
-        </div>
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" placeholder="john@example.com" />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Hi Oyindamola, I'd love to discuss..."></textarea>
-        </div>
-        <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© Copyright 2026 <span>Oyindamola Babatunde</span>. All rights reserved.</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+      <a href="#hero" class="footer-logo">Oyindamola<span>.</span></a>
+      <p>© Copyright 2026 <span>Oyindamola Babatunde</span>. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

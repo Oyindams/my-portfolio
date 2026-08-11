@@ -179,20 +179,23 @@
                 <div class="job-header-left">
                   <div class="company-logo">A</div>
                   <div>
-                    <h3 class="job-title">Frontend Developer</h3>
-                    <p class="job-company">Artytech Incorporation <span class="job-location">· Tokyo, Japan</span></p>
+                    <h3 class="job-title">Frontend Developer <span class="contract-tag">Contract</span></h3>
+                    <p class="job-company">Artytech Incorporation <span class="job-location">· Tokyo, Japan (Remote)</span></p>
                   </div>
                 </div>
-                <span class="job-date">Oct 2025 — Dec 2025</span>
+                <span class="job-date">Oct 2025 — Present</span>
               </div>
               <a href="https://artytech.jp" target="_blank" class="company-url">🌐 artytech.jp ↗</a>
               <ul class="job-responsibilities">
+                <li>Continued on as a contracted Frontend Developer after the internship, extending the engagement into an ongoing role.</li>
+                <li>Took on a community/team-lead responsibility — coordinating contributors and assigning tasks across ongoing project work.</li>
                 <li>Built a fully responsive Japanese-style landing page with animations, CSS styling, and responsive mobile support.</li>
                 <li>Developed a fully functional Vue.js website with routing, reusable components, and responsive UI.</li>
                 <li>Assisted in an AI-based system by curating and structuring keywords, metadata, and textual resources for model training and recommendation workflows.</li>
                 <li>Connected frontend components to a cloud-hosted backend (AWS Amplify) for real-time data handling.</li>
               </ul>
               <div class="job-tags">
+                <span>Team Lead</span>
                 <span>Vue.js</span><span>React</span><span>AWS Amplify</span><span>CSS</span><span>AI</span>
               </div>
             </div>
@@ -266,20 +269,31 @@
 
         <div class="projects-grid">
 
-          <div class="project-card">
+          <div class="project-card project-card-featured">
             <div class="project-accent"></div>
             <div class="project-header">
               <div class="project-links">
-                <span class="project-badge ongoing">Ongoing</span>
+                <span class="project-badge completed">Completed</span>
                 <a href="https://github.com/Oyindams" target="_blank">GitHub ↗</a>
               </div>
             </div>
-            <h3>Landslide Detection &amp; Classification</h3>
-            <p>Thesis project — developing an AI system that fuses SAR radar and optical satellite imagery (Sentinel-1 &amp; 2) to detect and classify landslides. Uses ML and deep learning models with XAI (SHAP) for explainability, targeting F1 &gt; 0.75.</p>
-            <div class="project-tags">
-              <span>Python</span><span>Deep Learning</span><span>SAR Imagery</span><span>SHAP</span><span>Sentinel</span>
+            <h3>Landslide Detection Using Satellite Imagery</h3>
+            <p class="project-subhead">Comparative analysis of traditional ML vs. deep learning on 12-channel multi-modal satellite imagery.</p>
+            <p>Final year thesis benchmarking traditional ML against deep learning for binary landslide detection, using the Zindi Africa Landslide Detection dataset — ~7,160 labelled (64×64×12) patches fusing Sentinel-2 optical bands with Sentinel-1 SAR radar, enabling detection under all weather conditions including cloud cover.</p>
+
+            <div class="project-metrics">
+              <div class="metric"><span class="metric-value">0.889</span><span class="metric-label">F1-Score (XGBoost, best)</span></div>
+              <div class="metric"><span class="metric-value">98.6%</span><span class="metric-label">AUC-ROC</span></div>
+              <div class="metric"><span class="metric-value">96.2%</span><span class="metric-label">Accuracy</span></div>
+              <div class="metric"><span class="metric-value">5</span><span class="metric-label">Models Compared</span></div>
             </div>
-            <span class="project-date">2026 — Thesis</span>
+
+            <p class="project-note">Best model: tuned XGBoost (F1 0.889) — outperforming a custom 12-channel CNN and EfficientNetV2B0 transfer learning, confirming that well-tuned gradient boosting is more data-efficient than deep learning at this dataset scale (~7K samples). Explainability via SHAP (TreeExplainer) and LIME on the CNN.</p>
+
+            <div class="project-tags">
+              <span>XGBoost</span><span>LightGBM</span><span>CNN</span><span>EfficientNetV2</span><span>Optuna</span><span>SHAP</span><span>LIME</span><span>SAR Imagery</span>
+            </div>
+            <span class="project-date">2026 — Final Year Thesis, McPherson University</span>
           </div>
 
           <div class="project-card">
@@ -388,7 +402,7 @@
           <div class="tool-chip"><span class="tool-fallback">C</span><span>C</span></div>
           <div class="tool-chip"><span class="tool-fallback">SQL</span><span>SQL</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" loading="lazy" /><span>HTML5</span></div>
-          <div class="tool-chip"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" loading="lazy" /><span>CSS3</span></div>
+          <div class="tool-chip"><span class="tool-fallback">CSS3</span><span>CSS3</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" /><span>JavaScript</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy" /><span>TensorFlow</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy" /><span>PyTorch</span></div>
@@ -397,8 +411,8 @@
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" alt="Kaggle" loading="lazy" /><span>Kaggle</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" loading="lazy" /><span>React</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" /><span>Vue.js</span></div>
-          <div class="tool-chip"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS Amplify" loading="lazy" /><span>AWS Amplify</span></div>
-          <div class="tool-chip"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code" loading="lazy" /><span>VS Code</span></div>
+          <div class="tool-chip"><span class="tool-fallback">AWS</span><span>AWS Amplify</span></div>
+          <div class="tool-chip"><span class="tool-fallback">VS</span><span>VS Code</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" loading="lazy" /><span>Jupyter</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" loading="lazy" /><span>Google Colab</span></div>
           <div class="tool-chip"><img src="https://cdn.simpleicons.org/qgis/589632" alt="QGIS" loading="lazy" /><span>QGIS</span></div>

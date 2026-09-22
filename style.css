@@ -514,6 +514,16 @@ nav {
   border-color: var(--accent);
 }
 
+.about-badge-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-badge-link:hover {
+  background: rgba(45, 212, 191, 0.06);
+  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.12);
+}
+
 .badge-num {
   font-size: 1.3rem;
   font-weight: 800;
@@ -684,6 +694,12 @@ nav {
   margin-left: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.sponsored-tag {
+  color: var(--accent);
+  background: rgba(45, 212, 191, 0.1);
+  border: 1px solid rgba(45, 212, 191, 0.3);
 }
 
 .job-company {
